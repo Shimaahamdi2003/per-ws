@@ -1,0 +1,130 @@
+
+
+*
+{
+    font-family:cursive;
+    margin: 0;
+    padding:0;
+}
+a{
+    color: white;
+    text-decoration: none;
+   
+}
+body
+{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.836),rgba(0, 0, 0, 0.432));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.home
+{
+    background-image: 
+    linear-gradient(to right ,rgba(0, 0, 0, 0.678) 20%,rgba(4, 4, 8, 0.616)),
+    url(back.jpg)
+    ;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    transition:background-image 5s 1S;
+}
+
+.home:hover
+{
+    background-image: 
+    linear-gradient(to right ,transparent,rgba(0, 0, 0, 0.027)),
+    url(back.jpg)
+    ;
+    background-size: 100% 100%;
+
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo
+{
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Lucida Handwriting',cursive;
+    text-transform: uppercase;
+    transition: transform 2s;
+}
+.logo:hover{
+transform: scale(1,2);
+}
+ul{
+    
+    width: 50%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ul a{
+    border-bottom: 2px solid transparent;
+
+
+}
+ul a:hover{
+    border-bottom-color:white;
+}
+.contant
+{
+    color: white;
+    
+    width: 50%;
+    margin-top: 50px;
+    padding: 30Px;
+    position: relative;
+    margin-left: 20px;
+}
+.contant h2
+{
+font-size: 80px;
+
+font-family: auto;
+
+}
+.contant p{
+    letter-spacing: 3px;
+    width: 500px;
+    padding: 20px 0 ;
+    font-family: auto;
+    font-size: 30px;
+}
+.contant button
+{
+    font-size: 20px;
+    padding: 6px 10px ;
+    border-radius: 30px;
+    border:2px solid transparent;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: transform 3s;
+
+}
+.contant button:hover
+{
+background-color: transparent;
+border-color: white;
+color: white;
+transform: scale(2,2);
+}
+@media screen and(max-width:200px){
+    .all
+    {
+        display: block;
+        width: 100%;
+    }
+    
+}
